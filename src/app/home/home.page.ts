@@ -31,7 +31,7 @@ export class HomePage {
 
     str = "Create email with;receiver:" + this.receiver_name + ";sender:" + this.sender_name + ";" + this.subject + this.keywords;
     console.log(str);
-    this.httpClient.get('http://19a245513a78.ngrok.io?em=' + str).subscribe(data => {
+    this.httpClient.get('<PLACE_URL_HERE>/?em=' + str).subscribe(data => {
       this.emailtry = data;
       console.log(this.emailtry);
       this.display();
